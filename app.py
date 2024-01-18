@@ -26,9 +26,22 @@ div.stButton > button:first-child:hover {
 
 
 def main():
-    st.title("Your raggedy Rag friend")
-    st.markdown(button_style, unsafe_allow_html=True)
 
+    st.sidebar.markdown(
+        """
+        <style>
+        div.stSidebar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 500vh; /* Adjust the height as needed */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.sidebar.image("image.png", width=190)
     book= st.selectbox("Choose your book", [None, "The R Book", "R for Data Science"])
 
     if book:
