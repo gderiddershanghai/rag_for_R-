@@ -4,3 +4,4 @@ nest_asyncio
 numpy
 trulens_eval
 python-dotenv
+pypdf
