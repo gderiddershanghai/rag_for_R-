@@ -3,5 +3,4 @@ llama_index
 nest_asyncio
 numpy
 trulens_eval
-os
-dotenv
+python-dotenv
